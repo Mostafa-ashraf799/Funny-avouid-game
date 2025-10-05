@@ -181,7 +181,7 @@
     let mouseY = canvas.height / 2;
     let targetY = canvas.height / 2;
 
-    // Rocket object (من الملف الأصلي)
+    // Rocket object 
     const rocket = {
       x: 150,
       y: canvas.height / 2,
@@ -199,10 +199,10 @@
         const shakeY = (Math.random() - 0.5) * this.shake;
         ctx.translate(this.x + shakeX, this.y + shakeY);
         
-        // Flame effects (longfazers من الملف الأصلي)
+        // Flame effects 
         this.drawFlames();
         
-        // Main rocket body (base من الملف الأصلي)
+        // Main rocket body
         ctx.fillStyle = '#f3cfcf';
         ctx.beginPath();
         ctx.moveTo(0, 0);
@@ -237,7 +237,7 @@
         ctx.closePath();
         ctx.fill();
         
-        // Face (face من الملف الأصلي)
+        // Face 
         ctx.save();
         ctx.translate(125, -15);
         ctx.rotate(-0.7);
@@ -259,7 +259,7 @@
         
         ctx.restore();
         
-        // Speed lines (fazer من الملف الأصلي)
+        // Speed lines 
         this.drawSpeedLines();
         
         ctx.restore();
